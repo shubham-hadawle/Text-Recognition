@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.textrecognitionapplication.ScannerActivity"
+    android:background="@color/light_blue">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/main_page_icon"
+        android:id="@+id/scanner_page_icon"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanner_page_icon"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Resulting Text will appear Here."
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/snap_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Snap"
+        android:background="@drawable/button_background"
+        app:backgroundTint="@color/red"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/detect_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Detect Text"
+        android:background="@drawable/button_background"
+        app:backgroundTint="@color/red"
+        android:layout_below="@+id/snap_button"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+</RelativeLayout>
